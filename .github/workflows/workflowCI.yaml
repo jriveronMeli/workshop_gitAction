@@ -1,0 +1,11 @@
+name: workFlowCI
+on:
+  push:
+    branches:
+      -"main"
+jobs:
+  GitFlow:
+    runs-on: ubuntu-latest
+    steps:
+      -name: print
+      run: echo "hello world"
