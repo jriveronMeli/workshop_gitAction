@@ -7,5 +7,5 @@ jobs:
   GitFlow:
     runs-on: ubuntu-latest
     steps:
-      -name: print
-      run: echo "hello world"
+      - name: imprimir
+        run: echo "hola mundo"
