@@ -1,15 +1,16 @@
-name: workFlowCI
+name: hola_mundo
+
 on:
   push:
     branches:
-      -"main"
+      - "main"
+
 jobs:
-  GitFlow:
+
+  hola_mundo:
     runs-on: ubuntu-latest
     steps:
       - name: imprimir
         run: echo "hola mundo"
       - name: clonar repo
         run: git clone https://${{github.actor}}:${{github.token}}@github.com/sebitas0623/workshop_gitAction.git
-      - name: listar
-        run: ls -lah
